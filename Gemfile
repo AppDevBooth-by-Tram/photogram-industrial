@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.0.3'
-
+gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.3', '>= 6.1.3.1'
 # Use postgresql as the database for Active Record
@@ -64,7 +64,7 @@ group :development do
   gem 'binding_of_caller'
   gem 'bullet'
   gem 'devise'
-  gem 'faker'
+  gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
   gem 'pry-rails'
   gem 'rack-canonical-host'
   gem 'rails_db'
